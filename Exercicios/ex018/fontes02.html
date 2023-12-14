@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@400;700&display=swap');
+
+
+        @font-face {
+            font-family: 'old1942'; /*Nome que a fonte receber*/
+            src: url('fonts/1942.ttf') format('truetype');
+        }
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        h1{
+            font-family: 'Playfair Display', serif;
+        }
+
+        h2{
+            font-family: 'old1942', 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 2em;
+        }
+        
+        p{
+            font-family: 'old1942', 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de fontes Externas</h1>
+    <h2>Aplicação de Fontes Externas</h2>
+    <p>Podemos baixar uma fonte e aplica-la em nosso site. Para isso fazemos da seginte maneira:</p>
+    
+    <ol>
+        <li>Aplicamos a regra para a fonte utilizando a regra @font-face na tag Style.    
+        </li>
+        <li>Na fonte family do fonte face nomeamos o nome da fonte</li>
+        <li>No src: url() colocamos o nome do arquivo da fonte</li>
+        <li>Logo apos colocamos format() para indicaro  formato que pode ser dos seguintes:
+            <ul type = square>
+                <li>
+                    opentype(otf)
+                </li>
+                <li>truetype(ttf)</li>
+                <li>embedded-popentype</li>
+                <li>truetype-aap (Apple Advanced Typography</li>
+                <li>svg</li>
+            </ul>
+        </li>
+        <p>Em nosso caso utilizamos a ttf</p>
+
+    </ol>   
+    
+</body>
+</html>

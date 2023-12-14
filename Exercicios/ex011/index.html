@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de Mídia</title>
+</head>
+<body>
+    <h1>Criando Mídia</h1>
+    <p>Para cada tipo de dispositivo a imagem irá alterar, utlilizampos o picture, img e source midia max type</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Midia de Áudio</h1>
+    <p>Para aplicar um audio usamos a tag <em>audio</em>.</p>
+    <p>Podemos Pegar audios sem direitos autorais no Youtube Studio</p>
+    <h2>Modo Simples</h2>
+    <audio src="midia/Cocktail Hour - Aaron Kenny.mp3" autoplay controls></audio>
+
+    <h2>Modo complexo</h2>
+    <p>Mais funcionalidades para o audio, por exemplo, baixar, compatibilidade ou deixar em loop</p>
+    <audio preload="metadata" autoplay controls> 
+        <source src="midia/Cocktail Hour - Aaron Kenny.mp3" type="audio/mpeg"> <!--Compatibilidade em otros navegadores. Vai caregar na ordem que aparece dentro de <audio>-->
+        <source src="midia/Cocktail Hour - Aaron Kenny.ogg" type="audio/ogg">
+        <source src="midia/Cocktail Hour - Aaron Kenny.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/Cocktail Hour - Aaron Kenny.mp3">Clique nesse link para baixar o arquivo .mp3</a></p>
+
+    </audio>
+
+</body>
+</html>

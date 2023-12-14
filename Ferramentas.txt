@@ -1,0 +1,26 @@
+Ferramentas
+
+Paleta de Cores
+- Adobe color
+- Paletton
+- coolors
+Coletar cores de site
+- Extensão Google chrome Colorzilla
+
+
+Saber as familias das Fontes
+- Web safe fonts combinations
+
+FONTES
++sites de fontes
+- google fontes
+- dafontes
+
++ Extensão para pegar fontes de sites
+- fontesninjas
+
+PLANEJAR SITE
+-Mockflow
+
+REDIMENCIONAR TELA
+- Extenção Window resizer
